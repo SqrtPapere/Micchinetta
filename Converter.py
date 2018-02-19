@@ -2,6 +2,14 @@
 import re
 
 class Converter():
+    """
+    Class used to convert textual representation of numbers (string) to numbers.
+
+    Attributes:
+        NUMBERS_SEQ     tuple of tuples containing the correspondeces between text and numbers
+        NUMBERS         dixtionary created from NUMBERS_SEQ
+        TOKEN_REGEX     regular expression to extract tokens (pieces of number's text representation) from text
+    """
     def __init__(self):
         self.NUMBERS_SEQ = (
             ('dieci', '10'),
